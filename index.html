@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best online food delivery service in India | myOnlinemeal.com</title>
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* CSS variables */
+        :root {
+            --navbar-height: 59px;
+        }
+
+        /* NAvigation bar */
+        #navbar {
+            display: flex;
+            align-items: center;
+
+        }
+
+        /*Navigation bar: logo image */
+        #logo {
+            margin: 4px 5px;
+        }
+
+        #logo img {
+            height: 50px;
+            margin: 4px 5px;
+        }
+
+        /*Navigation bar : List styling */
+        #navbar {
+            position: relative;
+            display: flex;
+            align-items: center;
+            top: 0px;
+            position: sticky;
+        }
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 80%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #navbar ul li {
+
+            list-style: none;
+            font-size: 1.3rem;
+
+        }
+
+        #navbar ul li a {
+            color: white;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+
+
+        }
+
+        /* Home section */
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            justify-content: center;
+            align-items: center;
+            height: 350px;
+        }
+
+        #home::before {
+            content: "";
+            background: url(spaghetti-g44523e7f3_1920.jpg) no-repeat center center/cover;
+            position: absolute;
+            height: 55%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+            top: 0px;
+            left: 0px;
+        }
+
+        #home h1 {
+            color: white;
+            text-align: center;
+            /* font-weight: bold; */
+        }
+
+        #home p {
+            color: white;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        /* Services section */
+        #services {
+            margin: 34px;
+            display: flex;
+        }
+
+        #services .box {
+            border: 2px solid brown;
+            border-radius: 23px;
+            margin: 2px 55px;
+            padding: 34px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+        }
+
+        #services .box img {
+            height: 150px;
+            margin: auto;
+            display: block;
+
+        }
+
+        /* Client section */
+        #client-section {
+            /* height: 344px; */
+            position: relative;
+        }
+
+        #client-section::before {
+            content: "";
+            position: absolute;
+            background: url('raspberries-g139100e63_1920.jpg') no-repeat center;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+
+        }
+
+        #clients {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #clients img {
+            height: 124px;
+        }
+
+        .client-item {
+            padding: 34px;
+
+        }
+
+        /* Utility class */
+        .h-primary {
+            font-size: 2.8rem;
+            padding: 12px;
+
+        }
+
+        .h-secondary {
+            font-size: 1.8rem;
+            padding: 12px;
+        }
+
+        .btn {
+            padding: 6px 20px;
+            border: 2px solid white;
+            background-color: brown;
+            color: white;
+            margin: 17px;
+            font-size: 1.2rem;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        /* COntact section */
+        #contact {
+            position: relative;
+        }
+
+        #contact::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            background: url('telephone-gc7beaa9bf_1920.jpg') no-repeat center center;
+        }
+
+        #contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+
+        #contact-box input,
+        #contact-box textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 9px;
+            font-size: 1.1rem;
+        }
+
+        #contact-box form {
+            width: 40%;
+        }
+
+        #contact-box form {
+            font-size: 1.3rem;
+        }
+
+        footer {
+            background: black;
+            color: white;
+            padding: 9px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="istock.webp" alt="myOnlinemeal.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home </a></li>
+            <li class="item"><a href="#services">Services</a></li>
+            <li class="item"><a href="#client-section">Our clients</a></li>
+            <li class="item"><a href="#contact">Contact us </a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome to MyOnlineMeal</h1>
+        <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda, autem cum
+            laboriosam a quod, dicta illo harum vitae illum perspiciatis eos exercitationem sunt </p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section class="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="pizza-g62c4ad788_1920.jpg" alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor,
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur facere fugit eius adipisci ipsa
+                    officiis ab laboriosam. Expedita veritatis minima repellendus nesciunt magni.
+                    sit amet consectetur adipisicing elit. Dolores, cumque tenetur!
+                    Iste unde labore alias deleniti magni blanditiis voluptas provident distinctio dolorum aliquid,
+                    minima quasi velit cumque soluta accusamus asperiores porro ut. Iure, atque.</p>
+            </div>
+            <div class="box">
+                <img src="food-g90fb7b685_1920.jpg" alt="">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">Lorem ipsum dolor,
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis assumenda molestias iste
+                    velit, impedit expedita suscipit consectetur corporis ea, saepe odio placeat dolore.
+                    sit amet consectetur adipisicing elit. Dolores, cumque tenetur!
+                    Iste unde labore alias deleniti magni blanditiis voluptas provident distinctio dolorum aliquid,
+                    minima quasi velit cumque soluta accusamus asperiores porro ut. Iure, atque.</p>
+            </div>
+            <div class="box">
+                <img src="delivery-guy-ga4bcb99f8_1280.png" alt="">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center">Lorem ipsum dolor,
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel illum nostrum odit est dolorum.
+                    Doloribus quia ab ea placeat? Minima necessitatibus ipsa quidem.
+                    sit amet consectetur adipisicing elit. Dolores, cumque tenetur!
+                    Iste unde labore alias deleniti magni blanditiis voluptas provident distinctio dolorum aliquid,
+                    minima quasi velit cumque soluta accusamus asperiores porro ut. Iure, atque.</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-items">
+                <img src="hp logo.png" alt="Our Clients">
+
+            </div>
+            <div class="client-items">
+                <img src="microsoft.png" alt="Our Clients">
+
+            </div>
+            <div class="client-items">
+                <img src="apple-gff1849158_1280.png" alt="Our Clients">
+
+            </div>
+            <div class="client-items">
+                <img src="skype logo.png" alt="Our Clients">
+
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="number">Phone Number: </label>
+                    <input type="text" name="name" id="number" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy;www.myOnlineMeal.com. All rights reserved;
+        </div>
+    </footer>
+</body>
+
+</html>
